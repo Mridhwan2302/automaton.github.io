@@ -1,0 +1,27 @@
+{
+  "name": "sn-generator",
+  "version": "1.0.0",
+  "description": "Serial Number Generator with WMS Bot Integration",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node server/index.js\" \"npx vite\"",
+    "dev:server": "node server/index.js",
+    "dev:client": "npx vite",
+    "build": "npx vite build"
+  },
+  "dependencies": {
+    "@zxing/library": "^0.23.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "jimp": "^0.16.13",
+    "node-telegram-bot-api": "^0.67.0",
+    "puppeteer": "^23.0.0",
+    "sql.js": "^1.11.0",
+    "tesseract.js": "^7.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "vite": "^5.4.0"
+  }
+}
